@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html{
+    font-size: 62.2%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+header.sociais{
+    width: 100%;
+    background-color: #252323f3;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 90;
+    top: 0;
+
+}
+
+main{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+h1{
+    color: #38a58a;
+    font-weight: bold;
+
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin: 15px 0 20px;
+}
+
+h1 span{
+    color: #05f0b6;
+    font-size: 28px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+div#pesquisar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    position: relative;
+
+}
+div#pesquisar input{
+    width: inherit;
+    padding: 8px;
+    border: 5px solid #828080;
+    border-radius: 25px;
+    transition: translate 500ms; 
+    scale: 0.8;
+    background-color: #252323f3;
+    color: #ffffff;
+    font-size: 28px;
+    
+}
+div#pesquisar input:focus{
+    padding-inline: 5px;
+    translate: 10px -14p;
+    scale: 0.8;
+
+}
+
+div#pesquisar input:is(:focus, :valid){
+    outline-color: #3c50eb;
+}
+
+.redesSociais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.redesSociais ul{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 100px 10px 0px;
+
+}
+
+div.redesSociais ul li{
+    margin-right: 30px;
+    list-style: none;
+}
+
+div.botaoLogin ul li#login{
+    margin-top: -24px;
+    height: 50px;
+    width: 10%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    background: #226957;
+    border-radius: 10px 20px;
+    margin-left: -90px;
+}
+
+div.botaoLogin ul li#login a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main.menu div.header{
+    width: 84%;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin-top: 100px;
+}
+.texto{
+    width: 50%;
+}
+h2#usuarios{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+div.usuarios{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 70vh;
+    background-position-y: bottom;
+    margin-top: 15.5vh;
+    
+
+}
+
+div.usuarios div.container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;   
+}
+
+div.usuarios div.container div.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width:300px;
+    height: 40vh;
+    margin: 12px;
+    margin-bottom: 210px;
+}
+
+div.usuarios div.container div.card img{
+    width: 100%;
+    height: inherit;
+    border-radius: 10px;
+}
+.card div.cardFace{
+    width: 300px;
+    height: 300px;
+    perspective: 700px;
+}
+.cardFront, .cardBack{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transition: 700ms;
+}
+.cardFront{
+    
+    z-index:1 ;
+}
+.cardBack{
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.cardBack h2{
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.cardBack h3{
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.card:hover .cardFront{
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+.card:hover .cardBack{
+    background-color: #38a58ace;
+    transform: rotateY(0deg);
+    z-index: 1;
+}
+
+div.info{
+    margin-top: 10px;   
+}
+
+div.info p.valor{
+    color: #226957;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+div.info div.info1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+div.info div.info1 a{
+    text-decoration: none;
+    color: #8b8b8b;
+}
+
+
+
+ button.verMais::before,
+ button.verMais::after{
+    content: " ";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: inherit;
+    transform: all .5s;
+}
+
+ button.verMais::before{
+    top: -15px;
+    left: -15px;
+    border-width: 3px 0 0 3px;
+}
+ button.verMais::after{
+    bottom: -15px;
+    right: -15px;
+    border-width: 0 3px 3px 0;
+}
+
+ button.verMais:hover::before,
+ button.verMais:hover::after{
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}
+
+
+div.ver{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.verMais{
+    background-color: #ffffff;
+    width: 50%;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #111;
+    border: 3px solid #188469;
+    position: relative;
+    margin-top: 20px;
+}
+
+
+
+
+@media screen and (min-width:1024px){
+
+    header.sociais{
+       height: 12vh;
+       background-color: #252323f3
+    }
+    header.sociais main div h1{
+        font-size: 10px;
+        color: rgb(255, 94, 0);  
+        
+    }
+    h1 span{
+        font-size: 15px;
+    }
+    
+    div.redesSociais{
+    
+        margin-right: -80px;
+    }
+    
+    div.redesSociais ul li{
+        margin-right: 20px;
+    }
+    div.botaoLogin ul{
+        margin-left: 90px;
+    }
+    div.botaoLogin ul li#login{
+        margin-top: 25px ;
+    }
+    div.usuarios div.container div.card{
+        
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (min-width:767px) and (min-width:1023px){
+    header.sociais{
+        height: 12vh;
+        background-color: #252323f3
+     }
+     header.sociais main div h1{
+         font-size: 10px;
+         color: rgb(255, 94, 0);  
+         
+     }
+     h1 span{
+         font-size: 15px;
+     }
+     
+     div.redesSociais{
+     
+         margin-right: -80px;
+     }
+     
+     div.redesSociais ul li{
+         margin-right: 20px;
+     }
+     div.botaoLogin ul{
+         margin-left: 90px;
+     }
+     div.botaoLogin ul li#login{
+         margin-top: 25px ;
+     }
+     div.usuarios div.container div.card{
+        
+        margin-bottom: 150px;
+    }
+}
+@media screen and (min-width:767px){
+    header.sociais{
+        height: 12vh;
+        background-color: #252323f3
+     }
+     header.sociais main div h1{
+         font-size: 24px;
+         color: rgb(255, 94, 0);  
+         
+     }
+     h1 span{
+         font-size: 29px;
+     }
+     
+     div.redesSociais{
+     
+         margin-right: -80px;
+     }
+     
+     div.redesSociais ul li{
+         margin-right: 20px;
+     }
+     div.botaoLogin ul{
+         margin-left: 90px;
+     }
+     div.botaoLogin ul li#login{
+         margin-top: -26px ;
+     }
+     div.usuarios div.container div.card{
+        
+        margin-bottom: 210px;
+    }
+}
+
+@media(max-width:352px){
+
+    header.sociais{
+        padding-left: 30px;
+    }
+    header.sociais main div h1{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 span{
+        font-size: 25px;
+    }
+
+   
+    div.botaoLogin ul li#login{
+        margin-top: 25px ;
+    }
+    
+}
+
+@media(max-width:390px){
+
+    header.sociais{
+        padding-left: 30px;
+    }
+    header.sociais main div h1{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 span{
+        font-size: 25px;
+    }
+
+   
+    div.botaoLogin ul li#login{
+        margin-top: 25px ;
+    }
+    
+}
+
+@media(max-width:380px){
+    header.sociais main div h1{
+        font-size: 20px;
+        margin-left: -15px;
+    }
+    div.botaoLogin ul li#login{
+        margin-top: -24px;
+        height: 50px;
+        width: 15%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+        background: #226957;
+        border-radius: 10px 20px;
+        margin-left: -20px;
+    }
+}
+
+@media(max-width:434px){
+
+    header.sociais{
+        padding-top: 15px;
+        padding-left: -15px;
+    }
+
+    .sociais h1{
+        font-size: 25px;
+        margin-left: 30px;
+    }
+
+    .redesSociais{
+        padding: 12px 0 0 0;
+    }
+
+    div.botaoLogin{
+        margin:0 90px 10px 0;
+        
+    }
+    div.botaoLogin ul li#login{
+        width: 20%;
+    }
+    
+}
+
+@media(max-width: 314px){
+    header.sociais h1{
+        display: none;
+    }
+}

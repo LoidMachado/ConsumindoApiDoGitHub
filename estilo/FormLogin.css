@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.fundo{
+    width: 60%;
+    height: 70vh;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2c3862;
+    box-shadow: 2px 2px 2px 2px rgba(0, 250, 162, 0.492);
+}
+
+div.fechar{
+    width: 100%;
+    margin: 10px 0 -40px 0;  
+}
+div.fechar h2{
+    float: right;
+    margin-right: 20px;
+     
+}
+div.fechar h2 a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 54px;
+}
+
+div.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+div.principal div.login{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+
+}
+
+
+div.principal div.login h1{
+    font-weight: bold;
+    font-size: 44px;
+    font-family: sans-serif;
+    color: #ffffff;
+    animation-name: moverParaDireita;
+    animation-duration: 3s;
+}
+
+div.principal div.login h1 span{
+    color: #05f0b6;
+}
+
+div.principal div.login hr{
+    margin-top: 10px;
+    width: 90%;
+    border: 0.5px solid #05f0b6;
+}
+
+div.principal div.email{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    
+}
+
+
+div.principal div.senha{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+input{
+    width: 100%;
+    height: 4vh;
+    color: #ffffff;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #2c3862;
+    border-bottom: 1px solid #d8d8d8;
+    
+}
+
+div.principal button{
+    width: 50%;
+    height: 45px;
+    margin-bottom: 30px;
+    background-color: #169b7a;
+    border-radius: 6px;
+    border: none;
+    margin-top: 20px;
+}
+
+div.principal button a{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 24px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+
+div.final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.final label{
+    color: #b0adad;    
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    
+}
+
+div.final a{
+    color: #169b7a;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+div.final a span{
+    color: #b0adad;
+}
+
+@keyframes moverParaDireita{
+    0%{
+        opacity: 0;
+        transform: translate(-10rem);
+        color: rgba(0, 26, 255,.0);
+    }
+
+    80%{
+        transform: translate(1rem);
+        color:  rgb(182, 177, 177);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+        color: #fff;
+    }
+} 
+    

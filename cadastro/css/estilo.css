@@ -1,0 +1,68 @@
+-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.princ{
+  background-color: #b41a2f;
+  height: inherit;
+}
+.op{
+  width: 100%;
+  height: inherit;
+  background-color: #000000a1;
+}
+#titulo{
+  margin-left: 125px;
+}
+
+#texto{
+  letter-spacing: 1px;
+}
+
+#divBtn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px;
+}
+
+
+
+
+@media (max-width: 700px) {
+  body {
+    font-size: 10px;
+  }
+
+  .frmContainer {
+    width: 90%!important;
+  }
+
+  .frmContainer label {
+    font-size: 12px!important;
+  }
+}
+
+.frmContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.frmContainer input {
+  width: 100%;
+  outline: none;
+  padding: 5px 10px; 
+  width: 100%;
+  margin-bottom: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+
+

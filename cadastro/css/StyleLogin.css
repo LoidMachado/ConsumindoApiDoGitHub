@@ -1,0 +1,108 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    header.navbar1{
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 1rem 3rem;
+        height: 6rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        box-shadow: 3px 3px 10px rgb(0, 0, 0);
+        flex-wrap: wrap; 
+    }
+    header.navbar1 nav ul {
+        display: flex;
+    }
+    
+    header.navbar1 nav li{
+        margin-right: 2rem;
+    }
+    
+    header.navbar1 nav li a{
+        color: orange;
+        font-size: 1.2rem;
+    }
+    
+    header.navbar1 nav ul li:last-child{
+        margin-right: 0;
+    }
+    .logo a{
+        color: orange;
+        font-size: 1.4rem;
+        font-weight: bolder;
+    }
+    .logotipo{
+        border-radius: 15px;
+    }
+
+    .menu-btn i{
+        color: orange;
+        cursor: pointer;
+        display: none;
+        font-size: 25px;
+    }
+
+    /*  RESPONSIVO Menu*/
+
+@media (max-width: 920px) {
+    .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #f36100;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+        flex-direction: column;
+
+    }
+    header.navbar1 nav li a{
+        color: white;
+    }
+
+    nav ul.open{
+        left: 0;
+
+    }
+    header.navbar1 nav ul li{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    header.navbar1 nav ul li a{
+        font-size: 20px;
+    }
+}
+/* Fim da responsividade do Menu */
+
+    @media (min-width: 868px) {
+        .gradient-form {
+        height: 100vh !important;
+        }
+        }
+        @media (min-width: 869px) {
+        .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+        }
+        }
+      

@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html{
+    font-size: 62.2%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+header.sociais{
+    width: 100%;
+    background-color: #252323f3;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 90;
+    top: 0;
+
+}
+
+main{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+.voltar{
+    margin: 10px;
+    margin-left: -130px;
+}
+
+
+h1{
+    font-weight: bold;
+    color: #05f0b6;
+    font-size: 40px;
+    margin: 15px 0 15px;
+    margin-right: 400px;
+    animation-name: moverParaDireita;
+    animation-duration: 3s;
+}
+@keyframes moverParaDireita{
+    0%{
+        opacity: 0;
+        transform: translate(-90rem);
+        color: #05f0b6;
+    }
+
+    80%{
+        transform: translate(5rem);
+        color:  rgba(78, 76, 76, 0.783);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translate(0);
+        color: #05f0b6;
+    }
+}
+
+h2{
+    margin: 100px 0 40px 40px;
+    font-size: 30px;
+    animation-name: moverCima;
+    animation-duration: 3s;
+    
+}
+
+@keyframes moverCima {
+    0%{
+        opacity: 0;
+        transform: translatey(-10rem);
+        color: rgba(0, 26, 255,.0);
+    }
+
+    80%{
+        transform: translatey(1rem);
+        color:  rgb(182, 177, 177);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translatey(0);
+        color: #fff;
+    }
+    
+}
+
+.usuarioSeleccionado{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+
+}
+.usuarioSeleccionado img{
+    width: 40%;
+    height: 40rem;
+    margin-right: 15px;
+    border-radius: 50px;
+}
+
+.usuarioSeleccionado h3{
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+
+.usuarioSeleccionado p{
+    line-height: 4rem;
+}
+
+.usuarioSeleccionado div.info{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width:350px){
+    header.sociais main div h1{
+        color: blueviolet;
+        font-size: 10px;
+    }
+}
+
+@media(max-width:376px){
+    header.sociais main div h1{
+        font-size: 22px;
+        margin-left: -15px;
+    }
+    div.botaoLogin ul li#login{
+        margin-top: -24px;
+        height: 50px;
+        width: 15%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+        background: #226957;
+        border-radius: 10px 20px;
+        margin-left: -20px;
+    }
+}
