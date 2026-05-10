@@ -53,7 +53,7 @@ Este projeto foi desenvolvido para explorar e consumir a **API pública do GitHu
 
 ```bash
 # 1. Clone o repositório
-git clone <seu-repositorio>
+git clone https://github.com/LoidMachado/ConsumindoApiDoGitHub.git
 cd ConsumindoApiDoGitHub
 
 # 2. Abra em um servidor local (necessário para CORS)
